@@ -7,6 +7,6 @@ from .models import *
 
 # Register your models here.
 class PrevencionAdmin(admin.ModelAdmin):
-	list_display=('tipo','descripcion')
+	list_display=('tipo','descripcion','medidas')
 
 admin.site.register(Prevencion,PrevencionAdmin)

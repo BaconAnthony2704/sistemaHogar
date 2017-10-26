@@ -7,6 +7,7 @@ from django.db import models
 class Prevencion(models.Model):
 	tipo=models.CharField(max_length=50,unique=True)
 	descripcion=models.TextField(max_length=600)
+	medidas=models.TextField(max_length=300)
 	class Meta:
 		verbose_name='Prevencion'
 		verbose_name_plural='Prevenciones'
