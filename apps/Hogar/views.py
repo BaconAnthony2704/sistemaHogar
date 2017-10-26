@@ -16,7 +16,8 @@ from django.db.models import Count
 
 # Create your views here.
 def index(request):
-	return render(request,'index.html',{})
+	servicio=Servicio.objects.all()
+	return render(request,'index.html',{'servicio':servicio})
 
 def prevencion(request):
 	return render(request,'prevencion.html',{})

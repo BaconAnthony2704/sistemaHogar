@@ -13,3 +13,13 @@ class Prevencion(models.Model):
 		verbose_name_plural='Prevenciones'
 	def __str__(self):
 		return '%s' %(self.tipo)
+
+class Servicio(models.Model):
+	tipo=models.CharField(max_length=50,unique=True)
+	contenido=models.TextField(max_length=300)
+	nombre_imagen=models.CharField(max_length=20)
+	class Meta:
+		verbose_name='Servicio'
+		verbose_name_plural='Servicios'
+	def __str__(self):
+		return '%s' %(self.tipo)
