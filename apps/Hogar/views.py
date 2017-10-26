@@ -18,5 +18,5 @@ from django.db.models import Count
 def index(request):
 	return render(request,'index.html',{})
 
-def base(request):
-	return render(request,'base.html',{})
+def prevencion(request):
+	return render(request,'prevencion.html',{})

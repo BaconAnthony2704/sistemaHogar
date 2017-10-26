@@ -6,5 +6,6 @@ from apps.Hogar.views import *
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-   url(r'^pruebase/',base,name='baseprueba'),
+   url(r'^prevencion/',prevencion,name='baseprevencion'),
+
 ]
