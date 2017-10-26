@@ -20,4 +20,8 @@ def index(request):
 	return render(request,'index.html',{'servicio':servicio})
 
 def prevencion(request):
-	return render(request,'prevencion.html',{})
+	prevencion=Prevencion.objects.all()
+	return render(request,'prevencion.html',{'prevencion':prevencion})
+
+def normas(request):
+	return render(request,'normas.html',{})

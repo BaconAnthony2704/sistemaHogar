@@ -7,5 +7,5 @@ from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
    url(r'^prevencion/',prevencion,name='baseprevencion'),
-
+   url(r'^normas/',normas,name='basenormas'),
 ]
